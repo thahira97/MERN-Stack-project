@@ -13,6 +13,7 @@ function App() {
   return (
     <Router>
       <MainNavigation />
+      <main>
       <Switch>
         <Route path="/" exact>
           <Users />
@@ -21,7 +22,7 @@ function App() {
           <NewPlace />
         </Route>
         <Redirect to="/" />
-      </Switch>
+      </Switch></main>
     </Router>
   );
 }
