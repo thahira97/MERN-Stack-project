@@ -7,7 +7,7 @@ const DUMMY_PLACES = [{
 id: 'm2',
 title: 'Burj Khalifa',
 description: 'One of the tallest building in the world',
-imageUrl: 'https://images.pexels.com/photos/5087047/pexels-photo-5087047.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+imageUrl: 'https://images.pexels.com/photos/5087050/pexels-photo-5087050.jpeg?auto=compress&cs=tinysrgb&w=760&h=750&dpr=3',
 address: '1 Sheikh Mohammed bin Rashid Blvd - Downtown Dubai - Dubai - United Arab Emirates',
 location : {
   lat: '25.1972° N',
