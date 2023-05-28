@@ -4,7 +4,7 @@ import "./PlaceItem.css"
 import Card from "../../shared/components/UIElements/Card";
 
 const PlaceItem = (props) => {
-  <li className="place-item">
+ return <li className="place-item">
     <Card>
       <div className="place-item__image">
         <img src={props.image} alt={props.title} />

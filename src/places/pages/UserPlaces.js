@@ -16,7 +16,7 @@ creator: 'u2'
 }, 
 {
   id: 'm3',
-  title: 'Burj Khalifa',
+  title: 'Banff',
   description: 'Beautiful place I have ever seen ❤️',
   imageUrl: 'https://lh3.googleusercontent.com/p/AF1QipPzimxJsxAtGlcTnauzpuNQJd7pcPn5l3BsQ3w_=s680-w680-h510',
   address: 'Improvement District No. 9, AB T0L',
