@@ -8,7 +8,7 @@ const inputReducer = (state, action) => {
       return {
         ...state,
         value: action.val,
-        isValid: true 
+        isValid: true,
       };
     default:
       return state;
@@ -16,9 +16,14 @@ const inputReducer = (state, action) => {
 };
 
 const Input = (props) => {
-  useReducer(inputReducer);
+  const [inputState, dispatch] = useReducer(inputReducer, {
+    value: "",
+    isValid: false,
+  });
 
-  const changeHandler = (event) => {};
+  const changeHandler = (event) => {
+    dispatch({ type: "CHANGE", val: event.target.value });
+  };
 
   const element =
     props.element === "input" ? (
@@ -27,9 +32,10 @@ const Input = (props) => {
         type={props.type}
         placeholder={props.placeholder}
         onChange={changeHandler}
+        value={inputState.value}
       />
     ) : (
-      <textarea id={props.id} rows={props.rows || 3} onChange={changeHandler} />
+      <textarea id={props.id} rows={props.rows || 3} onChange={changeHandler} value={inputState.value} />
     );
 
   return (
